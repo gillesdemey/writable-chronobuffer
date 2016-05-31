@@ -1,0 +1,24 @@
+{
+  "name": "writable-chronobuffer",
+  "version": "0.1.0",
+  "description": "Chronologically ordered Array as a writable stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "keywords": [
+    "buffer",
+    "array",
+    "chronological",
+    "stream",
+    "writable"
+  ],
+  "author": "Gilles De Mey <gilles.de.mey@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "readable-stream": "^2.1.2"
+  },
+  "devDependencies": {
+    "tap": "^5.7.2"
+  }
+}
