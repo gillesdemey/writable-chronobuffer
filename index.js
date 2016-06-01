@@ -45,7 +45,7 @@ ChronoBuffer.prototype.write = function (element) {
 ChronoBuffer.prototype.flush = function () {
   // compact the records, preallocating the array is faster but when flushing
   // the buffer you don't want an Array with null values
-  if (this._size < this.capacity()) {
+  if (this._size < this.capacity() && this.records.length === this.capacity()) {
     this.records.splice(-(this.capacity() - this._size))
   }
   return this.records
