@@ -33,7 +33,7 @@ tap.test('overflow buffer and flush', t => {
 tap.test('underflow buffer and flush', t => {
   t.plan(1)
 
-  var rb = chronoBuffer.create({ limit: 10 })
+  var rb = chronoBuffer.create({ limit: 8 })
   for (var i = 4; i >= 0; i--) {
     rb.write('Hello, world!')
   }
