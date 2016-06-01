@@ -1,6 +1,6 @@
 {
   "name": "writable-chronobuffer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Chronologically ordered Array as a writable stream",
   "main": "index.js",
   "scripts": {
