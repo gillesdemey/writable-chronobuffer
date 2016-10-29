@@ -10,6 +10,22 @@ tap.test('create chronoBuffer', t => {
   t.equal(rb.limit, 100)
 })
 
+tap.test('should be empty', t => {
+  t.plan(1)
+
+  var rb = chronoBuffer.create()
+  t.equal(rb.isEmpty(), true)
+})
+
+tap.test('add entries and not be empty', t => {
+  t.plan(1)
+
+  var rb = chronoBuffer.create({ limit: 3 })
+
+  rb.write('foo')
+  t.equal(rb.isEmpty(), false)
+})
+
 tap.test('create chronoBuffer with limit', t => {
   t.plan(1)
 
