@@ -4,7 +4,8 @@
   "description": "Chronologically ordered Array as a writable stream",
   "main": "index.js",
   "scripts": {
-    "test": "tap test.js --coverage"
+    "test": "tap test.js --coverage",
+    "cover": "tap --coverage-report=lcov && codecov"
   },
   "keywords": [
     "buffer",
@@ -19,6 +20,7 @@
     "readable-stream": "^2.1.2"
   },
   "devDependencies": {
+    "codecov": "^1.0.1",
     "tap": "^5.8.0"
   }
 }
