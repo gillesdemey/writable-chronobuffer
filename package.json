@@ -4,7 +4,7 @@
   "description": "Chronologically ordered Array as a writable stream",
   "main": "index.js",
   "scripts": {
-    "test": "tap test.js"
+    "test": "tap test.js --coverage"
   },
   "keywords": [
     "buffer",
@@ -19,6 +19,6 @@
     "readable-stream": "^2.1.2"
   },
   "devDependencies": {
-    "tap": "^5.7.2"
+    "tap": "^5.8.0"
   }
 }
