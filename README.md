@@ -1,5 +1,9 @@
 # Writable Buffer
 
+[![Build Status](https://travis-ci.org/gillesdemey/writable-chronobuffer.svg?branch=master)](https://travis-ci.org/gillesdemey/writable-chronobuffer)
+[![codecov](https://codecov.io/gh/gillesdemey/writable-chronobuffer/branch/master/graph/badge.svg)](https://codecov.io/gh/gillesdemey/writable-chronobuffer)
+
+
 ## Rationale
 
 The writable chrono buffer is a simple Array buffer as a writable stream.
